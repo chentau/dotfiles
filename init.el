@@ -1,0 +1,1 @@
+/home/tony/.emacs.d/init.el
