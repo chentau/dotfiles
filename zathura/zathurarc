@@ -1,0 +1,13 @@
+set selection-clipboard clipboard
+set guioptions "sv"
+set scroll-step 60
+set smooth-scroll true
+set default-bg "#ffffff"
+set statusbar-bg "#ffffff"
+set statusbar-fg "#000000"
+set inputbar-bg "#ffffff"
+set pages-per-row 5
+set font "SF Mono Bold 10"
+
+map <C-j> scroll full-down
+map <C-k> scroll full-up
