@@ -1,0 +1,1 @@
+/home/tony/.zsh_plugins.sh
