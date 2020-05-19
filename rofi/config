@@ -1,0 +1,3 @@
+rofi.lines: 5
+rofi.fullscreen: False
+rofi.theme: ~/.cache/wal/colors-rofi-light.rasi
