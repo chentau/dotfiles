@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tony/Pictures/wallpapers/cherryblossom.jpg",
+    "alpha": "100",
+    
+    "special": {
+        "background": "#f5f5f5",
+        "foreground": "#191919",
+        "cursor": "#191919"
+    },
+    "colors": {
+        "color0": "#f5f5f5",
+        "color1": "#eb0029",
+        "color2": "#E85D00",
+        "color3": "#faa41a",
+        "color4": "#87a566",
+        "color5": "#00a489",
+        "color6": "#4169e1",
+        "color7": "#191919",
+        "color8": "#9e9b9b",
+        "color9": "#eb0029",
+        "color10": "#E85D00",
+        "color11": "#faa41a",
+        "color12": "#87a566",
+        "color13": "#00a489",
+        "color14": "#4169e1",
+        "color15": "#360202"
+    }
+}

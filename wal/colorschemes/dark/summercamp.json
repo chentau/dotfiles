@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tony/Pictures/wallpapers/fuji_realistic.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#1c1810", 
+        "foreground": "#ffffff", 
+        "cursor": "#ffffff"
+    },
+    "colors": {
+        "color0": "#1c1810", 
+        "color1": "#e35142", 
+        "color2": "#fba11b", 
+        "color3": "#ccd909", 
+        "color4": "#55d654", 
+        "color5": "#4fd6aa", 
+        "color6": "#489bf0", 
+        "color7": "#f8f5de", 
+        "color8": "#877e64",
+        "color9": "#fe7d70", 
+        "color10": "#fbaf3e", 
+        "color11": "#f1fb57", 
+        "color12": "#84f183", 
+        "color13": "#8df1d1", 
+        "color14": "#83b8ef", 
+        "color15": "#ffffff"
+    }
+}

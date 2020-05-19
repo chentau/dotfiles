@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tony/Pictures/wallpapers/sunsetlanterns.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#051018",
+        "foreground": "#d5d5d8",
+        "cursor": "#d5d5d8"
+    },
+    "colors": {
+        "color0": "#051018",
+        "color1": "#789ed6",
+        "color2": "#876498",
+        "color3": "#f2a9be",
+        "color4": "#ed4c5c",
+        "color5": "#36a3bf",
+        "color6": "#5f7ed9",
+        "color7": "#d5d5d8",
+        "color8": "#bcbac2",
+        "color9": "#789ed6",
+        "color10": "#876498",
+        "color11": "#f2a9be",
+        "color12": "#ed4c5c",
+        "color13": "#36a3bf",
+        "color14": "#5f7ed9",
+        "color15": "#d5d5d8"
+    }
+}

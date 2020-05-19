@@ -1,0 +1,29 @@
+{
+    "wallpaper": "/home/tony/Pictures/wallpapers/flowers.jpg",
+    "alpha": "100",
+    
+    "special": {
+        "background": "#fafafa",
+        "foreground": "#5c6773",
+        "cursor": "#5c6773"
+    },
+    "colors": {
+        "color0": "#fafafa",
+        "color1": "#ff3333",
+        "color2": "#86b300",
+        "color3": "#ff6a00",
+        "color4": "#36a3d9",
+        "color5": "#a37acc",
+        "color6": "#0aa874",
+        "color7": "#5c6773",
+        "color8": "#828c99",
+        "color9": "#ff3333",
+        "color10": "#86b300",
+        "color11": "#ff6a00",
+        "color12": "#36a3d9",
+        "color13": "#a37acc",
+        "color14": "#0aa874",
+        "color15": "#abb0b6"
+    }
+}
+

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tony/Pictures/wallpapers/fuji.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#1D1F28",
+        "foreground": "#FDFDFD",
+        "cursor": "#C574DD"
+    },
+    "colors": {
+        "color0": "#282A36",
+        "color1": "#FF4971",
+        "color2": "#18E3C8",
+        "color3": "#FF8037",
+        "color4": "#556FFF",
+        "color5": "#C574DD",
+        "color6": "#3FDCEE",
+        "color7": "#FDFDFD",
+        "color8": "#414458",
+        "color9": "#FF4971",
+        "color10": "#18E3C8",
+        "color11": "#FF8037",
+        "color12": "#556FFF",
+        "color13": "#B043D1",
+        "color14": "#3FDCEE",
+        "color15": "#BEBEC1"
+    }
+}
