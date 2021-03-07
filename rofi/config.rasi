@@ -1,0 +1,27 @@
+configuration {
+	show-icons: true;
+	theme: "~/.cache/wal/colors-rofi-dark.rasi";
+	matching: "fuzzy";
+	location: 0;
+	fullscreen: false;
+	lines: 5;
+	font: "FiraCode Nerd Font Mono 12";
+}
+
+*{
+	line-style: "solid";
+}
+
+window {
+	width: 800;
+	border-radius: 15;
+}
+
+mainbox {
+	margin: 2%;
+}
+
+inputbar {
+	margin: 1.5%;
+}
+

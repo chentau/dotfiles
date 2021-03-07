@@ -1,14 +1,14 @@
 {
-    "wallpaper": "/home/tony/Pictures/wallpapers/desert.jpg",
+    "wallpaper": "/home/tony/Pictures/wallpapers/mountainside.jpg",
     "alpha": "100",
 
     "special": {
-        "background": "#fbf1c7",
+        "background": "#faf6e6",
         "foreground": "#3c3836",
         "cursor": "#3c3836"
     },
     "colors": {
-        "color0": "#fbf1c7",
+        "color0": "#faf6e6",
         "color1": "#cc241d",
         "color2": "#98971a",
         "color3": "#d79921",

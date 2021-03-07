@@ -10,10 +10,24 @@
 #
 
 set $mod Mod4
+# set $mod Mod1
+
+# Define names for default workspaces for which we configure key bindings later on.
+# We use variables to avoid repeating the names in multiple places.
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:SF Mono:style=Bold 10
+font pango:FiraCode Nerd Font Mono:style=Bold 10
 
 # colors
 set_from_resource $fg i3wm.foreground
@@ -21,32 +35,21 @@ set_from_resource $bg i3wm.background
 set_from_resource $col1 i3wm.color1
 set_from_resource $col2 i3wm.color2
 set_from_resource $col3 i3wm.color3
+set_from_resource $col4 i3wm.color4
+set_from_resource $col5 i3wm.color5
+set_from_resource $col6 i3wm.color6
 set_from_resource $col7 i3wm.color7
 set_from_resource $fbg i3wm.color8
 
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
-
-# Before i3 v4.8, we used to recommend this one as the default:
-# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-# The font above is very space-efficient, that is, it looks good, sharp and
-# clear in small sizes. However, its unicode glyph coverage is limited, the old
-# X core fonts rendering does not support right-to-left and this being a bitmap
-# font, it doesn't scale on retina/hidpi displays.
-
-# beautify gtk programs
-exec --no-startup-id gnome-settings-daemon
-
 # Set sound and brightness
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl -p spotify play-pause
@@ -59,14 +62,11 @@ bindsym XF86AudioPrev exec playerctl -p spotify previous
 
 # Remove borders and setup gaps
 # default_border pixel 1
-for_window [class=".*"] border pixel 3
+for_window [class=".*"] border pixel 2
 gaps outer 35
 gaps inner 15
 workspace $ws1 gaps outer 0
 workspace $ws1 gaps inner 0
-workspace $ws7 gaps inner 0
-workspace $ws7 gaps outer 0
-# smart_gaps on
 
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
@@ -93,12 +93,7 @@ for_window [class="Google-chrome"] floating disable
 # Open Dolphin in floating mode
 # for_window [class="Launch-fm"] floating enable
 # for_window [class="Zathura"] floating enable
-# 
-# for_window [class="feh"] floating enable
-# for_window [class="display"] floating enable
-# for_window [class="Matplotlib"] floating enable
-# for_window [class="r_x11"] floating enable
-
+#
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -168,26 +163,12 @@ bindsym $mod+minus scratchpad show
 
 # colorscheme
 # client                border     background   text      indicator    child_border
-client.focused          $fg         $bg\         $fg\    $col2       $col2 
-client.unfocused        $fg         $bg\         $fg\    $col2       $col2 
-client.focused_inactive $fg         $bg\         $fg\    $col2       $col2 
+client.focused          $fg         $bg\         $fg\    $fg       $fg 
+client.unfocused        $fg         $bg\         $fg\    $fg       $fg 
+client.focused_inactive $fg         $bg\         $fg\    $fg       $fg 
 client.background       $bg
 
 title_align center
-
-# Define names for default workspaces for which we configure key bindings later on.
-# We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
-
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -228,10 +209,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym $left       resize shrink width 25 px or 25 ppt
-        bindsym $down       resize grow height 25 px or 25 ppt
-        bindsym $up         resize shrink height 25 px or 25 ppt
-        bindsym $right      resize grow width 25 px or 25 ppt
+        bindsym $left       resize shrink width 15 px or 15 ppt
+        bindsym $down       resize grow height 15 px or 15 ppt
+        bindsym $up         resize shrink height 15 px or 15 ppt
+        bindsym $right      resize grow width 15 px or 15 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left        resize shrink width 15 px or 15 ppt
@@ -265,20 +246,16 @@ bindsym $mod+r mode "resize"
 # exec i3-config-wizard
 
 # Wallpapers and startup
-# exec_always --no-startup-id feh --bg-scale /home/tony/Pictures/wallpaper1.jpg
 
-for_window [class="scratchpadterm"] floating enable
-for_window [class="filemanager"] floating enable
 for_window [class="scratchpadterm"] move scratchpad
 for_window [class="filemanager"] move scratchpad
 
 exec --no-startup-id alsactl init
 exec --no-startup-id compton
 exec --no-startup-id polybar bar1 &
-# exec --no-startup-id polybar bar1.topleft &
-# exec --no-startup-id polybar bar1.topright &
 exec --no-startup-id wal -R
 exec --no-startup-id setxkbmap -option caps:ctrl_modifier
-exec --no-startup-id xinput set-prop 12 287 1
+exec --no-startup-id setxkbmap -option ctrl:nocaps
+# exec --no-startup-id xinput set-prop 14 350 1
 exec --no-startup-id kitty --class=scratchpadterm
 exec --no-startup-id kitty --class=filemanager ranger

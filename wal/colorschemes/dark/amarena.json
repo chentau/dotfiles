@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tony/Pictures/wallpapers/white_flower.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background":	"#1A2026",
+        "foreground":	"#FFFFFF",
+        "cursor":	"#FFFFFF"
+    },
+    "colors": {
+        "color0":	"#526170",
+        "color1":	"#F92D72",
+        "color2":	"#6CCB6E",
+        "color3":	"#c2bf65",
+        "color4":	"#4CB9D6",
+        "color5":	"#C269BC",
+        "color6":	"#58D6BF",
+        "color7":	"#F4F5F2",
+        "color8":	"#526170",
+        "color9":	"#F92D72",
+        "color10":	"#6CCB6E",
+        "color11":	"#c2bf65",
+        "color12":	"#4CB9D6",
+        "color13":	"#C269BC",
+        "color14":	"#58D6BF",
+        "color15":	"#F4F5F2"
+    }
+}

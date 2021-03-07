@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tony/Pictures/wallpapers/macarons.jpg",
+    "alpha": "100",
+    
+    "special": {
+        "background": "#EDFEFE",
+        "foreground": "#787d8a",
+        "cursor": "#787d8a"
+    },
+    "colors": {
+        "color0": "#EDFEFE",
+        "color1": "#FA5AA4",
+        "color2": "#2fba7c",
+        "color3": "#FA946E",
+        "color4": "#63C5EA",
+        "color5": "#CF8EF4",
+        "color6": "#89CCF7",
+        "color7": "#787d8a",
+        "color8": "#c9c9c9",
+        "color9": "#FA5AA4",
+        "color10": "#2fba7c",
+        "color11": "#FA946E",
+        "color12": "#63C5EA",
+        "color13": "#CF8EF4",
+        "color14": "#89CCF7",
+        "color15": "#787d8a"
+    }
+}

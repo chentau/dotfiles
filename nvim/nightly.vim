@@ -6,6 +6,7 @@ Plug 'tpope/vim-commentary'
 Plug 'justinmk/vim-dirvish'
 Plug 'justinmk/vim-sneak'
 Plug 'junegunn/fzf.vim'
+Plug 'nvim-treesitter/nvim-treesitter'
 " Plug 'yuki-ycino/fzf-preview.vim'
 " Plug 'psliwka/vim-smoothie'
 " Plug 'sirver/ultisnips'
@@ -20,6 +21,14 @@ call plug#end()
 "Enable fzf
 set rtp+=~/Downloads/.fzf
 set rtp+=~/repos/todolist.nvim
+
+lua <<EOF
+require 'nvim-treesitter.configs'.setup {
+    highlight = {
+        enable = true,
+    },
+}
+EOF
 
 let g:todo_keywords = ["TODO", "ON-HOLD", "WAITING", "IN-PROGRESS", "DONE"]
 let g:todo_tags = ["home", "school", "work", "appointment"]
@@ -318,10 +327,8 @@ inoremap <c-r> <c-r><c-p>
 " search with word boundaries
 cnoremap <c-k> <home>\<<end>\>
 
-" grep for word under cursor
 nnoremap <leader>gw :silent lgrep! <c-r><c-w><cr>:lopen<cr>
 nnoremap <leader>gr :silent lgrep! 
-
 " ----------------functions----------------------
 
 " these functions turn off the highlighting

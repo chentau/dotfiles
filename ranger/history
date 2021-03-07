@@ -1,9 +1,3 @@
-rename hash.jpg
-rename rotations.jpg
-rename heap.jpg
-rename rb.jpg
-sort
-search bucld
 search PURC
 Rename cp_bucld.pdf
 rename cp_bucld.pdf
@@ -31,13 +25,10 @@ search HW
 rename essay2.docx
 search Report
 rename Report.pdf
-search gem
 Rename bhb12b5k3l12jk2l123l1l5
 rename 
 mkdir 53215y251uy23s
 rename hw10.tex
-delete
-
 [1;3D
 search 
 search Doc
@@ -48,3 +39,12 @@ set viewmode multipane
 search Downloads
 set column_ratios 0, 1, 0
 set viewmode miller
+rename cori.pdf
+search boot
+search gem
+open_with 
+open_with vlc
+
+delete
+rename learning_curves_irt_alternate.pdf
+deletej

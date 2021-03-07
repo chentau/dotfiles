@@ -1,2 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/tony/repos/neovim/test'
+let g:netrw_dirhist_6='/home/tony/repos/nvim-treesitter/lua/nvim-treesitter'
+let g:netrw_dirhist_5='/home/tony/repos/nvim-treesitter/queries/lua'
+let g:netrw_dirhist_4='/home/tony/repos/nvim-treesitter/queries'
+let g:netrw_dirhist_3='/home/tony/repos/nvim-treesitter'
+let g:netrw_dirhist_2='/home/tony/repos/nvim-treesitter/lua'
+let g:netrw_dirhist_1='/home/tony/repos/nvim-treesitter/lua/nvim-treesitter'

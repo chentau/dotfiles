@@ -1,7 +1,6 @@
 set selection-clipboard clipboard
 set guioptions "sv"
 set scroll-step 60
-set smooth-scroll true
 set default-bg "#ffffff"
 set statusbar-bg "#ffffff"
 set statusbar-fg "#000000"
